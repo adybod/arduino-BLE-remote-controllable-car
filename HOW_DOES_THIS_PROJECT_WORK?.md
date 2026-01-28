@@ -287,3 +287,6 @@ Conceptually, this project combines:
 - A simple **command protocol** (characters from the phone app) interpreted by the **Arduino**.
 
 With the hardware wired correctly and the code mapping each incoming character to a clear motor action, you get a responsive, remote‑controllable RC car driven entirely over Bluetooth.
+
+After all of this background knowledge for a simple rc car, I hope you will have taken something away from this project.
+HAPPY BUILDING! :>
