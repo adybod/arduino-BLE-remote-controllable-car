@@ -1,10 +1,10 @@
+// change the pinouts to the ones you are using;
 #define in1 8 
 #define in2 9
 #define in3 10
 #define in4 11
 
-char direction;
-
+char WheelMovement;
 
 void setup() {
   pinMode(in1, OUTPUT);
@@ -17,12 +17,11 @@ void setup() {
 
 void loop() {
   if (Serial.available() > 0) {
-    direction = Serial.read();   // <-- Update only when data arrives
+    WheelMovement = Serial.read();   // <-- Update only when data arrives
   }
 
 
-  //change this to the pinouts of the wheels for it to wor flawlessly
-  switch (direction) {
+switch (WheelMovement) {
     case 'A':
 
       digitalWrite(13, HIGH);
@@ -53,6 +52,5 @@ void loop() {
       digitalWrite(in4, LOW);
       break;   
     
-
   }
 }
