@@ -55,6 +55,11 @@ Typical logic for one motor (e.g. Motor A):
 
 The **ENA/ENB pins**:
 
+<div style="display: flex; gap: 10px;">
+  <img src="images/L298NMotorDriverCircuit.png" alt="L298N Motor Driver Circuit" style="width: 48%; height: auto;">
+  <img src="images/L298NModulePinout.webp" alt="L298N Module Pinout" style="width: 48%; height: auto;">
+</div>
+
 - When **HIGH**: Motor is allowed to move (direction determined by IN1/IN2 or IN3/IN4).
 - When driven with `analogWrite()` from the Arduino:
   - The duty cycle of the PWM controls the **effective voltage**, and therefore the **speed** of the motor.
@@ -114,6 +119,8 @@ The HC‑05 communicates using **UART (TX/RX)**:
 
 - **HC‑05 TX → Arduino RX**
 - **HC‑05 RX → Arduino TX**
+
+![L298N Motor Driver Circuit](images/HC-05ModulePinout.jpg)
 
 This cross‑connection is critical:
 
