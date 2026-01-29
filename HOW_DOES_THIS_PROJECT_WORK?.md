@@ -36,7 +36,7 @@ The rest of this document explains the **theory behind each part** and provides 
 
 The L298N sits **between**:
 
-- A **power source** for the motors (e.g. a battery pack).
+- A **power source** for the motors (e.g., a battery pack).
 - The **DC motors** themselves.
 - The **Arduino control pins**.
 
@@ -46,7 +46,7 @@ Each motor is controlled using **two input pins** and **one enable pin**:
 - **IN3 and IN4**: Control Motor B direction.
 - **ENA and ENB**: Enable pins for Motor A and Motor B, used for speed control via PWM.
 
-Typical logic for one motor (e.g. Motor A):
+Typical logic for one motor (e.g., Motor A):
 
 - **IN1 = LOW,  IN2 = HIGH → Motor forward**
 - **IN1 = HIGH, IN2 = LOW  → Motor backward**
@@ -67,7 +67,7 @@ The **ENA/ENB pins**:
 
 In this project:
 
-- One side of the car (left motors) is typically wired as **Motor A**.
+- One side of the car (left motor) is typically wired as **Motor A**.
 - The other side (right motors) is wired as **Motor B**.
 - By driving the two sides in different directions/speeds, you can go **straight**, **turn**, or even **spin in place**.
 
@@ -96,7 +96,7 @@ If you’d like a visual explanation of Bluetooth, this video is a good starting
 
 - **Bluetooth Classic (e.g. HC‑05)**
   - Acts as a **wireless serial cable**.
-  - Data is sent over a virtual UART, so on the Arduino side you use `Serial` or `SoftwareSerial`.
+  - Data is sent over a virtual UART, so on the Arduino side, you use `Serial` or `SoftwareSerial`.
   - Very simple to integrate: if you can read/write over serial, you can use it.
 
 - **Bluetooth Low Energy (BLE)**
@@ -295,5 +295,5 @@ Conceptually, this project combines:
 
 With the hardware wired correctly and the code mapping each incoming character to a clear motor action, you get a responsive, remote‑controllable RC car driven entirely over Bluetooth.
 
-After all of this background knowledge for a simple rc car, I hope you will have taken something away from this project.
+After all of this background knowledge for a simple RC car, I hope you will have taken something away from this project.
 HAPPY BUILDING! :>
